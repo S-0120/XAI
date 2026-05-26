@@ -1,4 +1,4 @@
-# XAI
+# XC-MD
 A malware detector that also explains the cause of malware for both windows and android.
 
 # Overview
@@ -137,27 +137,14 @@ imbalanced-learn<br>
 pyarrow
 
 # Running the Demo
-Option 1 — Streamlit locally:
-bashstreamlit run app/app.py<br>
-Option 2 — Google Colab:<br>
-python!pip install streamlit pyngrok -q<br>
-from pyngrok import ngrok<br>
-import subprocess, time<br>
-
-subprocess.Popen(['streamlit', 'run', 'app.py',
-                  '--server.port', '8501',
-                  '--server.headless', 'true'])<br>
-time.sleep(3)<br>
-public_url = ngrok.connect(8501)<br>
-print(f"XC-MD live at: {public_url}")<br>
-Option 3 — Hugging Face Spaces:
-Live demo available at: https://huggingface.co/spaces/yourusername/XC-MD-Malware-Detector
+Hugging Face Spaces:
+Live demo available at: https://sheeesshhhh-xc-md.hf.space/
 
 # How to Use the Demo
 
-Open the app and select Android APK or Windows EXE tab
+Open the app and select Android APK or Windows EXE tab 
 Upload a feature CSV file — use the provided demo samples in /demo/ to test
-Click Analyze
+OR click Demo buttons to check the demos
 View the prediction verdict, confidence scores and SHAP feature importance chart
 
 Input format: Single row CSV containing the feature vector extracted from the file. Android expects 100 system call frequency features. Windows expects 100 PE structural features.
