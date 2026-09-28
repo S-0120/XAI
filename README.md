@@ -42,11 +42,12 @@ XC-MD/
 │   ├── cross_platform_shap_comparison.png
 │   ├── combined_confusion_matrix.png
 │   ├── combined_roc_curves.png
-│   └── complete_results.json
 │
 ├──  README.md
 ├──  XAI_Project.ipynb
-│    ├── Main project notebook with Android dataset preprocessing, model training, explainability and Streamlit UI  
+│    ├── Main project notebook with Streamlit UI
+├──  cicmaldroid.ipynb
+|    ├──  Android dataset workflow 
 ├──  ember.ipnynb
 │    ├── Windows complete workflow, dataset preprocessing, model training and explainability
 ```
