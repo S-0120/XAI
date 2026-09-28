@@ -9,6 +9,9 @@ Black-box verdicts — even the best models offer no explanation for their decis
 
 XC-MD solves both by combining a stacking ensemble of Random Forest, XGBoost and LightGBM under a Logistic Regression meta-learner, paired with SHAP global explanations and LIME local justifications — all within one unified framework.
 
+# Project demo
+Watch the XC-MD Demo(./demo/xc-md-demo.mp4)
+
 # Results
 | Platform | Dataset | Accuracy | AUC |
 |---|---|---|---|
