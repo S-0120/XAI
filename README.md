@@ -26,25 +26,7 @@ https://github.com/user-attachments/assets/ab0a9c4a-e67f-4f93-8f0a-e01e6ad2e0e1
 ```
 XC-MD/
 │
-├── 📓 notebooks/
-│   ├── Android_Pipeline.ipynb
-│   ├── Windows_Pipeline.ipynb
-│   └── Cross_Platform_Analysis.ipynb
-│
-├── 🖥️ app/
-│   └── app.py
-│
-├── 🤖 models/
-│   ├── rf_base.pkl
-│   ├── xgb_base.pkl
-│   ├── lgbm_base.pkl
-│   └── lr_meta_tuned.pkl
-│
-├── 📊 datasets/
-│   ├── preprocessed/
-│   └── ember_preprocessed/
-│
-├── 🧪 demo/
+├── 🧪 demo test files/
 │   ├── demo_adware.csv
 │   ├── demo_banking.csv
 │   ├── demo_sms.csv
@@ -62,10 +44,12 @@ XC-MD/
 │   ├── combined_roc_curves.png
 │   └── complete_results.json
 │
-├── requirements.txt
-└── README.md
+├──  README.md
+├──  XAI_Project.ipynb
+│    ├── Main project notebook with Android dataset preprocessing, model training, explainability and Streamlit UI  
+├──  ember.ipnynb
+│    ├── Windows complete workflow, dataset preprocessing, model training and explainability
 ```
-
 
 
 ## Architecture
@@ -119,13 +103,6 @@ XC-MD/
 Android classes: Adware, Banking Malware, SMS Malware, Riskware, Benign<br>
 Windows classes: Benign, Malicious
 
-# Installation
-bash# Clone the repository
-git clone https://github.com/yourusername/XC-MD.git<br>
-cd XC-MD
-
-# Install dependencies
-pip install -r requirements.txt
 
 # Requirements
 streamlit<br>
@@ -142,18 +119,6 @@ tensorflow>=2.15<br>
 imbalanced-learn<br>
 pyarrow
 
-# Running the Demo
-Hugging Face Spaces:
-Live demo available at: https://sheeesshhhh-xc-md.hf.space/
-
-# How to Use the Demo
-
-Open the app and select Android APK or Windows EXE tab 
-Upload a feature CSV file — use the provided demo samples in /demo/ to test
-OR click Demo buttons to check the demos
-View the prediction verdict, confidence scores and SHAP feature importance chart
-
-Input format: Single row CSV containing the feature vector extracted from the file. Android expects 100 system call frequency features. Windows expects 100 PE structural features.
 
 # XAI Explainability
 XC-MD integrates two complementary explanation methods:<br>
@@ -190,6 +155,7 @@ Submitted to IEEE conference. Full paper available in this repository.
 |---|---|
 | Shikha | Android pipeline, stacking ensemble, SHAP/LIME, GUI |
 | Ananya | Windows pipeline, Ember preprocessing, Windows evaluation |
+| Mukesh Kumar | Guide
 
 # Acknowledgements
 
